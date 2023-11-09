@@ -8,5 +8,5 @@
 
 void s_h_prompt(void)
 {
-    fav_print("favour_sh_shell$");
+    fav_print("favour_sh_shell$ ");
 }
