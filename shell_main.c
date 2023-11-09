@@ -8,12 +8,17 @@
 
 int main(void)
 {
-    char s_h_command[1024];
+    char in_command[1024];
 
-    while (true)
+    while (1)
     {
-        s_h_prompt();
-        read_favour_command(s_h_command, sizeof(s_h_command));
-        fav_print(s_h_command);
+        sh_prompt();
+        read_favour_command(in_command, sizeof(in_command));
+        if (strcmp(in_command, "exit") == 0)
+            break;
+
+        execute_sh_command(in_command);
     }
+
+    return 0;
 }
