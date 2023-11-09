@@ -12,7 +12,7 @@ int main(void)
 
     while (1)
     {
-        sh_prompt();
+        s_h_prompt();
         read_favour_command(in_command, sizeof(in_command));
         if (strcmp(in_command, "exit") == 0)
             break;

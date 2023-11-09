@@ -17,7 +17,7 @@ void execute_sh_command(const char*sh_in_command)
     }
     else if (child_pid == 0)
     {
-        if (execlp(in_command, sh_in_command, NULL) == -1)
+        if (execlp(sh_in_command, sh_in_command, NULL) == -1)
         {
             perror("execlp");
             exit(EXIT_FAILURE);

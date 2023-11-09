@@ -23,5 +23,5 @@ void read_favour_command(char *sh_in_command, size_t size_s)
             exit(EXIT_FAILURE);
         }
     }
-    in_command[strcspn(sh_in_command, "\n")] = '\0';
+    sh_in_command[strcspn(sh_in_command, "\n")] = '\0';
 }
