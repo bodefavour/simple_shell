@@ -19,6 +19,11 @@ int main(void)
 		{
 			exit_builtin();
 		}
+		if (strcmp(in_command, "env") == 0)
+		{
+			env_buil_tin();
+			continue;
+		}
 
 		execute_sh_command(in_command);
 	}

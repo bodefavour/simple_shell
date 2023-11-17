@@ -20,5 +20,8 @@ void execute_sh_command(const char *sh_in_command);
 void execute_sh_child_process(const char *sh_in_command, const char *args[]);
 void search_cm_and_execute(const char *sh_in_command, const char *args[]);
 void exit_builtin(void);
+void env_buil_tin(void);
+
+extern char **environ;
 
 #endif /* _SHELL_H */
