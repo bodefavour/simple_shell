@@ -19,5 +19,6 @@ void read_favour_command(char *sh_in_command, size_t size_s);
 void execute_sh_command(const char *sh_in_command);
 void execute_sh_child_process(const char *sh_in_command, const char *args[]);
 void search_cm_and_execute(const char *sh_in_command, const char *args[]);
+void exit_builtin(void);
 
 #endif /* _SHELL_H */

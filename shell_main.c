@@ -16,7 +16,9 @@ int main(void)
 		read_favour_command(in_command, sizeof(in_command));
 
 		if (strcmp(in_command, "exit") == 0)
-			break;
+		{
+			exit_builtin();
+		}
 
 		execute_sh_command(in_command);
 	}
